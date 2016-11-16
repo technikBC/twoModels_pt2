@@ -1,0 +1,8 @@
+{% block content %}
+{% load staticfiles %}
+
+<h2>{{modeltwo.title}}</h2>
+<h4>on {{modeltwo.date}}</h4>
+<p>{{modeltwo.body|safe}}</p>
+
+{% endblock %}
