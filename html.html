@@ -2,7 +2,7 @@
 
 <h1>My first model is cool!</h1>
 {for obj in dbOne}
-<h2><a href="/myapp/stuff_in_modelone/{{obj.id}}">{obj.title}</a></h2><br> #we defined stuff_in_modelone in urls.py
+<h2><a href="/myapp/stuff_in_modelone/{{obj.id}}">{obj.title}</a></h2> #we defined stuff_in_modelone in urls.py
 <h3>{obj.date}</h3> #... you get the picture
 {% endfor %}
 
