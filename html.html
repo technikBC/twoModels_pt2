@@ -1,0 +1,15 @@
+...
+
+<h1>My first model is cool!</h1>
+{for obj in dbOne}
+<h2><a href="/myapp/stuff_in_modelone/{{obj.id}}">{obj.title}</a></h2> #we defined stuff_in_modelone in urls.py
+<h3>{obj.date}</h3> #... you get the picture
+{% endfor %}
+
+<h1>My second model is also cool!</h1>
+{for obj2 in dbTwo}
+<h2><a href="/myapp/stuff_in_modeltwo/{{obj2.id}}">{obj2.title}</a></h2>
+<h3>{obj2.date}</h3> #... you get the picture
+{% endfor %}
+
+...
